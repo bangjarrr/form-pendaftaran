@@ -41,3 +41,19 @@ btnNoReset.forEach(button => {
         noResetForm();
     });
 });
+
+document.querySelector('.data-kelamin').addEventListener('change', function (event) {
+    if (event.target.type === 'checkbox') {
+        uncheckOtherCheckboxes(event.target);
+    }
+});
+
+function uncheckOtherCheckboxes(checkedCheckbox) {
+    const checkboxes = document.querySelectorAll('.data-kelamin input[type="checkbox"]');
+    checkboxes.forEach((checkbox) => {
+        if (checkbox !== checkedCheckbox) {
+            checkbox.checked = false;
+        }
+    });
+}
+

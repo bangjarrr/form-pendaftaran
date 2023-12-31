@@ -4,9 +4,9 @@
     font-family:'Courier New', Courier, monospace;
 }
 
-* input {
+* input, textarea {
     border: 1px solid #000;
-    padding: 2px 10px;
+    padding: 5px 10px;
     margin: 10px 0px;
 }
 
