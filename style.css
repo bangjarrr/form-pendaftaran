@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+* input {
+    border: 1px solid #000;
+    padding: 2px 40px;
+    margin: 10px 0px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.data-utama {
+    padding: 0px 30px;
+    border: 1px solid #000;
+}
+
+.data-utama
+.data-header {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    background: darkcyan;
+    color: white;
+}
+
+.data-utama
+.data-pribadi {
+    margin: 20px 0px;
+    padding: 0px 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .data-utama
+    .data-pribadi
+    .data-group {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 10px;
+    }
+}
+
+@media only screen and (min-width:769px) {
+    .data-utama
+    .data-pribadi
+    .data-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .data-utama
+    .data-pribadi
+    .data-group
+    .data-kelamin,
+    .data-asalSekolah {
+        margin-left: 30px;
+    }
+}
+
+.data-pelengkap {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    display: none;
+}
+
+.data-pelengkap
+.data-header {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    background: darkcyan;
+    color: white;
+}
+
+.data-pelengkap
+.kelengkapan-data {
+    margin: 0px 15px;
+}
+
+.kosongkan-formulir {
+    display: flex;
+    justify-content: end;
+    margin: 15px 5px;
+}
+
+.kosongkan-formulir button {
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.btn {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn button:first-child {
+    padding: 5px 10px;
+    background: green;
+    color: white;
+    border: none;
+}
+
+.btn button{
+    background: red;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .alert {
+        display: none;
+        z-index: 9999999999999999999;
+        position: absolute;
+        top: 30%;
+        left: 0;
+    }
+    
+}
+
+@media only screen and (min-width:769px) {
+    .alert {
+        display: none;
+        z-index: 9999999999999999999;
+        position: absolute;
+        top: 40%;
+        left: 21%;
+    }
+    
+}
+
+
+.alert-title {
+    display: flex;
+    background: #b6b6b6;
+    padding: 20px 40px;
+    color: #000;
+    text-align: center;
+    margin: 0px 50px;
+}
+
+.alert-title button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    height: 5vh;
+    width: 5vw;
+}
+
+.btn-alert hr {
+    border-bottom: 2px solid #000;
+}
+
+.btn-alert {
+    background: #b6b6b6;
+    text-align: center;
+    margin: 0px 50px;
+}
+
+.btn-alert button {
+    margin: 30px 5px 20px 5px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.btn-alert #yes-reset {
+    background: red;
+    color: #fff;
+    border: none;
+}
+
+.btn-alert .no-reset {
+    background: green;
+    color: #fff;
+    border: none;
+}
+

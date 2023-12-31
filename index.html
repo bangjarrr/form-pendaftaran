@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Pendaftaran | ( nama perusahaan )</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <main>
+
+        <section class="alert" id="my-alert">
+            <div class="alert-title">
+                <h1>Apakah anda yakin ingin mengosongkan formulir ?</h1>
+                <button type="button" class="no-reset" onclick="noResetForm()">X</button>
+            </div>
+            <div class="btn-alert">
+                <hr>
+                <button type="button" id="yes-reset" onclick="resetForm()">Kosongkan Formulir</button>
+                <button type="button" class="no-reset" onclick="noResetForm()">Cancel</button>
+            </div>
+        </section>
+        <section class="data-utama" id="data-utama">
+            <div class="data-header">
+                <h1>Data Pribadi</h1>
+            </div>
+            <div class="data-pribadi">
+                <form class="form">
+                    <div class="data-nama">
+                        <label for="nama">Nama : </label>
+                        <br>
+                        <input type="text" name="nama" id="nama">
+                    </div>
+                    <div class="data-group">
+                        <div class="tempat-lahir">
+                            <label for="tempatLahir">Tempat Lahir: </label>
+                            <br>
+                            <input type="text" name="tempatLahir" id="tempatLahir">
+                        </div>
+                        <div class="tanggal-lahir">
+                            <label for="tanggalLahir">Tanggal Lahir :</label>
+                            <br>
+                            <input type="date" name="tanggalLahir" id="tanggalLahir">
+                        </div>
+                        <div class="data-kelamin" >
+                            <p>Jenis Kelamin : </p>
+                            <input type="checkbox" name="radio" id="radio">
+                            <label for="radio">P</label>
+                            <input type="checkbox" name="radio" id="radio">
+                            <label for="radio">L</label>
+                        </div>
+                        <div class="data-alamat">
+                            <label for="alamat">Alamat Lengkap : </label>
+                            <br>
+                            <input type="text" name="alamat" id="alamat">
+                        </div>
+                        <div class="data-asalSekolah">
+                            <label for="asalSekolah">Asal Sekolah : </label>
+                            <br>
+                            <input type="text" name="asalSekolah" id="asalSekolah">
+                        </div>
+                    </div>
+                    <div class="data-noTelp">
+                        <label for="nomorHp">Nomor Hp :</label>
+                        <br>
+                        <input type="text" name="nomorHp" id="nomorHp">
+                    </div>
+                </form>
+            </div>
+            <div class="btn">
+                <button type="submit" id="next">Selanjutnya</button>
+            </div>
+            <div class="kosongkan-formulir">
+                <button class="reset" onclick="kosongFormulirAlert()">kosongkan Formulir ?</button>
+            </div>
+        </section>
+
+        <section class="data-pelengkap" id="data-pelengkap">
+            <div class="data-header">
+                <h1>Data Pribadi</h1>
+            </div>
+            <form class="form">
+                <div class="form kelengkapan-data">
+                    <div class="nama-ortu">
+                        <label for="namaOrtu">Nama Orangtua / Wali : </label>
+                        <br>
+                        <input type="text" name="namaOrtu" id="namaOrtu">
+                    </div>
+                    <div class="alamat-ortu">
+                        <label for="alamatOrtu">Alamat Orangtua / Wali : </label>
+                        <br>
+                        <input type="text" name="alamatOrtu" id="alamatOrtu" >
+                    </div>
+                    <div class="pekerjaan-ortu">
+                        <label for="pekerjaan">Pekerjaan Orangtua / Wali : </label>
+                        <br>
+                        <input type="text" name="pekerjaan" id="pekerjaan">
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="submit" id="submit">Kirim</button>
+                    <button type="submit" id="back">kembali</button>
+                </div>
+            </form>
+            <div class="kosongkan-formulir">
+                <button class="reset" onclick="kosongFormulirAlert()">kosongkan Formulir ?</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
