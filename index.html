@@ -26,12 +26,12 @@
             </div>
             <div class="data-pribadi">
                 <form class="form">
-                    <div class="data-nama">
-                        <label for="nama">Nama : </label>
-                        <br>
-                        <input type="text" name="nama" id="nama">
-                    </div>
                     <div class="data-group">
+                        <div class="data-nama">
+                            <label for="nama">Nama : </label>
+                            <br>
+                            <input type="text" name="nama" id="nama">
+                        </div>
                         <div class="tempat-lahir">
                             <label for="tempatLahir">Tempat Lahir: </label>
                             <br>
@@ -44,26 +44,28 @@
                         </div>
                         <div class="data-kelamin" >
                             <p>Jenis Kelamin : </p>
-                            <input type="checkbox" name="Jenis-Kelamin" id="radioP">
+                            <span>
+                            <input type="checkbox" name="Jenis-Kelamin" id="radioP" class="radio">
                             <label for="radioP">P</label>
-                            <input type="checkbox" name="Jenis-Kelamin" id="radioL">
+                            <input type="checkbox" name="Jenis-Kelamin" id="radioL" class="radio">
                             <label for="radioL">L</label>
-                        </div>
-                        <div class="data-alamat">
-                            <label for="alamat">Alamat Lengkap : </label>
-                            <br>
-                            <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea>
+                            </span>
                         </div>
                         <div class="data-asalSekolah">
                             <label for="asalSekolah">Asal Sekolah : </label>
                             <br>
                             <input type="text" name="asalSekolah" id="asalSekolah">
                         </div>
-                    </div>
-                    <div class="data-noTelp">
-                        <label for="nomorHp">Nomor Hp :</label>
-                        <br>
-                        <input type="text" name="nomorHp" id="nomorHp">
+                        <div class="data-noTelp">
+                            <label for="nomorHp">Nomor Hp :</label>
+                            <br>
+                            <input type="text" name="nomorHp" id="nomorHp">
+                        </div>
+                        <div class="data-alamat">
+                            <label for="alamat">Alamat Lengkap : </label>
+                            <br>
+                            <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -74,32 +76,30 @@
                 <h1>Data Tambahan</h1>
             </div>
             <form class="form">
-                <div class="form kelengkapan-data">
+                <div class="kelengkapan-data">
                     <div class="nama-ortu">
                         <label for="namaOrtu">Nama Orangtua / Wali : </label>
                         <br>
                         <input type="text" name="namaOrtu" id="namaOrtu" >
-                    </div>
-                    <div class="alamat-ortu">
-                        <label for="alamatOrtu">Alamat Orangtua / Wali : </label>
-                        <br>
-                        <textarea name="alamat-ortu" id="alamat-ortu" cols="30" rows="10"></textarea>
                     </div>
                     <div class="pekerjaan-ortu">
                         <label for="pekerjaan">Pekerjaan Orangtua / Wali : </label>
                         <br>
                         <input type="text" name="pekerjaan" id="pekerjaan">
                     </div>
-                </div>
-                <div class="btn">
-                    <button type="submit" id="submit">Kirim</button>
-                    <button type="submit" id="back">kembali</button>
+                    <div class="alamat-ortu">
+                        <label for="alamatOrtu">Alamat Orangtua / Wali : </label>
+                        <br>
+                        <textarea name="alamat-ortu" id="alamat-ortu" cols="30" rows="10"></textarea>
+                    </div>
                 </div>
             </form>
-            <div class="kosongkan-formulir">
-                <button class="reset" onclick="kosongFormulirAlert()">kosongkan Formulir ?</button>
+            <div class="btn">
+                <button type="submit" id="submit">Kirim</button>
+                <button type="button" class="reset" onclick="kosongFormulirAlert()">kosongkan Formulir ?</button>
             </div>
         </section>
+        <p style="padding-bottom: 100px;"></p>
     </main>
 
     <script src="script.js"></script>

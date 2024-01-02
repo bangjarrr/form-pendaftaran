@@ -46,6 +46,7 @@ main {
     padding: 0px 10px;
 }
 
+
 @media only screen and (max-width: 768px) {
     .data-utama
     .data-pribadi
@@ -54,12 +55,31 @@ main {
         grid-template-columns: 1fr ;
         grid-gap: 10px;
     }
+    .data-utama
+    .data-pribadi
+    .form
+    .data-group
+    .data-kelamin {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .data-utama
+    .data-pribadi
+    .form
+    .data-group
+    .data-kelamin input{
+        margin: 0px 10px;
+    }
 }
 
 @media only screen and (min-width:769px) {
     .data-utama
     .data-pribadi
-    .data-group {
+    .data-group,
+    .data-pelengkap
+    .kelengkapan-data {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
@@ -67,10 +87,19 @@ main {
 
     .data-utama
     .data-pribadi
+    .form
+    .data-group span {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .data-utama
+    .data-pribadi
+    .form
     .data-group
-    .data-kelamin,
-    .data-asalSekolah {
-        margin-left: 30px;
+    .data-kelamin input{
+        margin: 10px 20px;
     }
 }
 
@@ -94,24 +123,11 @@ main {
     margin: 0px 15px;
 }
 
-.kosongkan-formulir {
-    display: flex;
-    justify-content: end;
-    margin: 15px 5px;
-}
-
-.kosongkan-formulir button {
-    background: none;
-    border: none;
-    color: #000;
-    cursor: pointer;
-}
-
 .btn {
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
+    justify-content: center;
 }
 
 .btn button:first-child {
@@ -154,6 +170,7 @@ main {
 
 .alert-title {
     display: flex;
+    align-items: center;
     background: #b6b6b6;
     padding: 20px 40px;
     color: #000;
@@ -162,15 +179,20 @@ main {
 }
 
 .alert-title button {
+    display: flex;
+    align-items: center;
     background: none;
     border: none;
     font-size: 20px;
     height: 5vh;
     width: 5vw;
+    margin-left: 25px;
+    color: #000;
 }
 
 .btn-alert hr {
     border-bottom: 2px solid #000;
+    margin: 0px 30px;
 }
 
 .btn-alert {
